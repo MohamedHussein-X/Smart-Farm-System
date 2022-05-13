@@ -1,0 +1,330 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3147C443-DD43-45D7-8BDC-21B7AD76717A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Farm_DB</RootNamespace>
+    <AssemblyName>Farm DB</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ComponentFactory.Krypton.Docking">
+      <HintPath>D:\Junior 1st\Introducton to Data Base Systems\Project\Krypton-master\Krypton-master\Bin\ComponentFactory.Krypton.Docking.dll</HintPath>
+    </Reference>
+    <Reference Include="ComponentFactory.Krypton.Navigator">
+      <HintPath>D:\Junior 1st\Introducton to Data Base Systems\Project\Krypton-master\Krypton-master\Bin\ComponentFactory.Krypton.Navigator.dll</HintPath>
+    </Reference>
+    <Reference Include="ComponentFactory.Krypton.Ribbon">
+      <HintPath>D:\Junior 1st\Introducton to Data Base Systems\Project\Krypton-master\Krypton-master\Bin\ComponentFactory.Krypton.Ribbon.dll</HintPath>
+    </Reference>
+    <Reference Include="ComponentFactory.Krypton.Toolkit">
+      <HintPath>D:\Junior 1st\Introducton to Data Base Systems\Project\Krypton-master\Krypton-master\Bin\ComponentFactory.Krypton.Toolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="ComponentFactory.Krypton.Workspace">
+      <HintPath>D:\Junior 1st\Introducton to Data Base Systems\Project\Krypton-master\Krypton-master\Bin\ComponentFactory.Krypton.Workspace.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="A_Engineer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="A_Engineer.Designer.cs">
+      <DependentUpon>A_Engineer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="A_EngMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="A_EngMain.Designer.cs">
+      <DependentUpon>A_EngMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChangePass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChangePass.Designer.cs">
+      <DependentUpon>ChangePass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controller.cs" />
+    <Compile Include="Dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dashboard.Designer.cs">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DBManager.cs" />
+    <Compile Include="Employees.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employees.Designer.cs">
+      <DependentUpon>Employees.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Farm Manager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Farm Manager.Designer.cs">
+      <DependentUpon>Farm Manager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_ManMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_ManMain.Designer.cs">
+      <DependentUpon>F_ManMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LogIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LogIn.Designer.cs">
+      <DependentUpon>LogIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainMEng.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainMEng.Designer.cs">
+      <DependentUpon>MainMEng.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainMMang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainMMang.Designer.cs">
+      <DependentUpon>MainMMang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mechanical Engineer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mechanical Engineer.Designer.cs">
+      <DependentUpon>Mechanical Engineer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MiddleManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MiddleManager.Designer.cs">
+      <DependentUpon>MiddleManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Profile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Profile.Designer.cs">
+      <DependentUpon>Profile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SignUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SignUp.Designer.cs">
+      <DependentUpon>SignUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StoredProcedures.cs" />
+    <Compile Include="Traders.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Traders.Designer.cs">
+      <DependentUpon>Traders.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vet.Designer.cs">
+      <DependentUpon>Vet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vet_Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vet_Main.Designer.cs">
+      <DependentUpon>Vet_Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Wherehouse_Supervisor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Wherehouse_Supervisor.Designer.cs">
+      <DependentUpon>Wherehouse_Supervisor.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="A_Engineer.resx">
+      <DependentUpon>A_Engineer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="A_EngMain.resx">
+      <DependentUpon>A_EngMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChangePass.resx">
+      <DependentUpon>ChangePass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dashboard.resx">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employees.resx">
+      <DependentUpon>Employees.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Farm Manager.resx">
+      <DependentUpon>Farm Manager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_ManMain.resx">
+      <DependentUpon>F_ManMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LogIn.resx">
+      <DependentUpon>LogIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainMEng.resx">
+      <DependentUpon>MainMEng.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainMMang.resx">
+      <DependentUpon>MainMMang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mechanical Engineer.resx">
+      <DependentUpon>Mechanical Engineer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MiddleManager.resx">
+      <DependentUpon>MiddleManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Profile.resx">
+      <DependentUpon>Profile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="SignUp.resx">
+      <DependentUpon>SignUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Traders.resx">
+      <DependentUpon>Traders.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vet.resx">
+      <DependentUpon>Vet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vet_Main.resx">
+      <DependentUpon>Vet_Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wherehouse_Supervisor.resx">
+      <DependentUpon>Wherehouse_Supervisor.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sign-error-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mc-yellw.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mc-green.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5_Inside-the-course_Primary_Assessment.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5_Inside-the-course_Primary_Assessmentlol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3135715.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Smart-agriculture.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aggeng.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\agricultural-engineer-4091963-3386356.icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vetl.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Traders.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aggeng1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\A_Engg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\employee.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\newemp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\emppppp.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Boss-and-employee-cartoon-vector.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Truck.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\assessment.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vet.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\assestssssss.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TradeDeals.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
